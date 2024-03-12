@@ -66,8 +66,14 @@ df = pd.get_dummies(df, columns=['playlist_genre', 'playlist_subgenre'], drop_fi
 user_input_df=df.iloc[-1,:]
 user_input_df=pd.DataFrame(user_input_df.values.reshape(1,-1),columns=df.columns)
 
+# Bins for prediction output
+bins = [0, 50000000, 100000000, 150000000, 200000000, 500000000, 1000000000]
+
 # Submit button and prediction display
 if st.button("Predict"):
     # Make prediction using the chosen model
     prediction = model.predict(user_input_df)
+
+    # Bin the predicted value into the specified bins
+    binned_prediction = pd.cut(prediction, bins=bins, labels=[f'Bin {i+1}' for i in range(len(bins)-1)])
     st.write(f"Number of predicted streams: {prediction}")
