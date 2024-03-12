@@ -4,7 +4,7 @@
 
 ### Objective
 
-The primary aim of this project is to create an interactive app that can be used to predict Song popularity. Utilizing a regression analysis of the Spotify 30000 song dataset, we are looking to predict the “popularity” score of a given song based on different variables.
+The primary aim of this project is to create an interactive app that can be used to make predictions on number of streams. Utilizing a regression analysis of the Spotify 30000 song dataset, we are looking to predict this score of a given song based on different variables.
 
 ### Tools
 The following tools were used to build this project
@@ -31,9 +31,16 @@ The data for Spotify song tracks was collected from Kaggle and Spotify API
 #### 4. StreamLit App
 
 #### 5. Analysis 
+Scores of different models
+1. Regression Elastic Net
+2. Random Forest
+3. K-fold
+4. XG Boost
+
+The XG Boost model seems to be a good Machine Learning model that we can use for our predictions. 
 
 #### Code Files:
-1.   - Data Cleaning using Pandas
+1. Data_Cleaning_notebook.ipynb - Data Cleaning using Pandas
 2.	 – Loading data to SQLite Database file and conversion to df for use
 3.	 – Regression Model and Random Forest Code files
 4.	 – XG Boost Code
