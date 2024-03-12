@@ -40,8 +40,7 @@ The data for Spotify song tracks was collected from Kaggle and Spotify API
 5.	 - Streamlit App
 
 #### References
-1. Kaggle Dataset : [
-](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs )
+1. Kaggle Dataset : [(https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs )](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs )
 2. Spotify API Documentation
 3. XGBoost Documentation
 4. Streamlit Documentation
