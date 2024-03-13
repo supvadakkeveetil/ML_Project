@@ -29,6 +29,7 @@ The data for Spotify song tracks was collected from Kaggle and Spotify API
 -	XGBoost 
 
 #### 4. StreamLit App
+- https://app-test-zrg86zbek2ds55tzjdle58.streamlit.app/
 
 #### 5. Analysis 
 Scores of different models
